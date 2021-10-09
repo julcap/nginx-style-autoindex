@@ -1,0 +1,69 @@
+body {
+    color: #125318;
+    margin: 50px;
+    min-width: 500px;
+    background-color: aquamarine;
+}
+
+hr {
+    display: none;
+}
+
+.nginx-list {
+    padding: 40px 40px;
+    border-bottom: 2px rgba(18, 83, 24, 0.44) solid;
+    border-top: 2px rgba(18, 83, 24, 0.44) solid;
+}
+
+.nginx-list > li {
+    display: flex;
+    list-style: none;
+    line-height: 34px;
+    border-bottom: 1px rgba(18, 83, 24, 0.44) solid;
+    padding: 0 10px;
+}
+
+.nginx-list > li:first-child .date {
+    display: none;
+}
+
+.nginx-list > li:hover {
+    background-color: #a5f29f;
+    border-bottom-color: #125318;
+}
+
+.nginx-list > li .date {
+    order: 1;
+    flex: 1;
+    text-align: start;
+}
+
+.nginx-list > li .size {
+    order: 3;
+    flex: 1;
+    text-align: end;
+}
+
+.nginx-list > li a {
+    order: 2;
+    flex: 3;
+}
+
+.nginx-list > li a,
+.nginx-list > li a:visited {
+    text-decoration: none;
+    color: black
+}
+
+.nginx-list > li span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 300px;
+    display: inline-block;
+    color: #666;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(255, 255, 255, 0.45);
+}
