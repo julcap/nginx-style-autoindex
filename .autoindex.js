@@ -33,7 +33,7 @@
             var nginxList = document.querySelector('body>pre');
             if (!nginxList) return;
 
-            //transform link elements to ul and add classNames
+            //transform link elements to li and add classNames
             var htmlLines = nginxList.innerHTML.split('\n');
             let html = [];
             htmlLines.forEach(line => {
