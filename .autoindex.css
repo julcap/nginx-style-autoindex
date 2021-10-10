@@ -2,7 +2,7 @@ body {
     color: #125318;
     margin: 50px;
     min-width: 500px;
-    background-color: aquamarine;
+    background-color: #d0f8eb;
 }
 
 hr {
@@ -23,8 +23,10 @@ hr {
     padding: 0 10px;
 }
 
-.nginx-list > li:first-child .date {
-    display: none;
+.nginx-list > li.back .svg-icon{
+    height: 25px;
+    margin: 5px 0;
+    fill: #125318;
 }
 
 .nginx-list > li:hover {
