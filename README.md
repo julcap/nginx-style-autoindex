@@ -1,7 +1,7 @@
 ## Style auto index page on Nginx
 
 I was looking for an easy way to add some styling to static assets served directly from Nginx.
-I wanted an easy way that does not need to compile Nginx from source everytime there is an update.
+I wanted a simple way that does not require compiling Nginx from source everytime there is an update.
 
 The solution requires the "ngx_http_addition_module" which is part of the default options in Nginx published builds.
 
