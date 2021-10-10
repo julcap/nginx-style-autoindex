@@ -10,6 +10,7 @@ hr {
 }
 
 .nginx-list {
+    min-width: 500px;
     padding: 40px 40px;
     border-bottom: 2px rgba(18, 83, 24, 0.44) solid;
     border-top: 2px rgba(18, 83, 24, 0.44) solid;
@@ -23,7 +24,7 @@ hr {
     padding: 0 10px;
 }
 
-.nginx-list > li.back .svg-icon{
+.nginx-list > li.back .svg-icon {
     height: 25px;
     margin: 5px 0;
     fill: #125318;
@@ -38,23 +39,28 @@ hr {
     order: 1;
     flex: 1;
     text-align: start;
+    margin-right: 20px;
 }
 
 .nginx-list > li .size {
     order: 3;
     flex: 1;
     text-align: end;
+    min-width: 75px;
 }
 
 .nginx-list > li a {
     order: 2;
     flex: 3;
+    margin-right: 20px;
 }
 
 .nginx-list > li a,
 .nginx-list > li a:visited {
     text-decoration: none;
-    color: black
+    color: black;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
 }
 
 .nginx-list > li span {
