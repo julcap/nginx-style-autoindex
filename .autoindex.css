@@ -53,6 +53,8 @@ hr {
     order: 2;
     flex: 3;
     margin-right: 20px;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
 }
 
 .nginx-list > li a,

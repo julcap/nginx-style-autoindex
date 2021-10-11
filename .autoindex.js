@@ -3,7 +3,9 @@
         getFirstElement: function (str) {
             let element = document.createElement("DIV");
             element.innerHTML = str;
-            return element.firstChild ? element.firstChild.outerHTML : null;
+            if (!element.firstChild) return ''
+            element.firstChild.title = element.firstChild.innerText;
+            return element.firstChild.outerHTML;
         },
         getDate: function (str) {
             // Match date format '07-Oct-2021 20:11'
