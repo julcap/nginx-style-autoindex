@@ -1,2 +1,4 @@
 files/*
+!files/.autoindex.js
+!files/.autoindex.css
 logs/*

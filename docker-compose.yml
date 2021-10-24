@@ -3,11 +3,11 @@ services:
   web:
     image: nginx
     volumes:
-      - ./static-site.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./static-files.conf:/etc/nginx/conf.d/static-files.conf:ro
+      - ./site.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./files.conf:/etc/nginx/conf.d/static-files.conf:ro
       - ./files:/var/www/files:ro
       - ./logs:/var/log/nginx/
-      - ./static-site:/var/www/static
+      - ./public:/var/www/public
       - ./header.html:/var/www/header.html:ro
       - ./footer.html:/var/www/footer.html:ro
     ports:
