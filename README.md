@@ -34,7 +34,7 @@ server {
 Clone this repo to the Nginx root dir
 ```
 cd /var/www
-git clone https://github.com/Lyhan/nginx-style-autoindex.git
+git clone https://github.com/julcap/nginx-style-autoindex.git
 ```
 
 Create symlink to the next files
